@@ -10,7 +10,7 @@ namespace Bank.Rest
     {
         public async Task<ResponseGenerico<EnderecoModel>> BuscarEnderecoPorCep(string cep)
         {
-            var request = new HttpRequestMessage(HttpMethod.Get, $"https://brasilapi.com.br/api#tag/BANKS/paths/~1banks~1v1/get/cep/v1/{cep}");
+            var request = new HttpRequestMessage(HttpMethod.Get, $"https://brasilapi.com.br/api/cep/v1/{cep}");
             var response = new ResponseGenerico<EnderecoModel>();
             using (var client = new HttpClient())
             {

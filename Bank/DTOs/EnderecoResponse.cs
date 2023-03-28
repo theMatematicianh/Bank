@@ -17,7 +17,7 @@ namespace Bank.DTOs
    
         public string? Rua { get; set; }
 
-     
+        [JsonIgnore]
         public string? Servico { get; set; }
     }
 }
